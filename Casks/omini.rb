@@ -5,15 +5,15 @@ cask "omini" do
   url "https://ominidev.com/downloads/Omini-#{version}.dmg"
   name "Omini"
   desc "Terminal-first workspace and editor for vibe coding"
-  homepage "https://ominidev.com"
-
-  auto_updates true
-  depends_on macos: ">= :sonoma"
+  homepage "https://ominidev.com/"
 
   livecheck do
     url "https://ominidev.com/updates/macos/latest.json"
     regex(/"version"\s*:\s*"([^"]+)"/i)
   end
+
+  auto_updates true
+  depends_on macos: ">= :sonoma"
 
   app "Omini.app"
 
