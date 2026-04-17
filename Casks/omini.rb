@@ -1,6 +1,6 @@
 cask "omini" do
-  version "1.14.0"
-  sha256 "fa106e976e0e2e980045f6ef6698343e600545476511c743983e11ffdc3391e1"
+  version "1.15.0"
+  sha256 "9bae77d581b988436f15116d426e6f3690b2fbed00cb9405d51ae67f44df5d50"
 
   url "https://ominidev.com/downloads/Omini-#{version}.dmg"
   name "Omini"
