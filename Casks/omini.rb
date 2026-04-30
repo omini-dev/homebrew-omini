@@ -1,9 +1,9 @@
 cask "omini" do
-  version "0.0.47"
-  sha256 "63734ed272625ffc00933dce1bb243fc5c8b4bf18c33d000a45337327b9c32d8"
+  version "0.0.48"
+  sha256 "363f5976a20a7ceab7d9902bafcf7c54aaef9e3075b85b1b839425533aa0de39"
 
-  url "https://ominidev.com/downloads/Omini-#{version}.dmg"
-  name "Omini"
+  url "https://ominidev.com/downloads/OminiDev-#{version}.dmg"
+  name "OminiDev"
   desc "Terminal-first workspace and editor for vibe coding"
   homepage "https://ominidev.com/"
 
@@ -15,12 +15,11 @@ cask "omini" do
   auto_updates true
   depends_on macos: ">= :sonoma"
 
-  app "Omini.app"
+  app "OminiDev.app"
 
   zap trash: [
-    "~/Library/Application Support/Omini",
     "~/Library/Application Support/OminiDev",
-    "~/Library/Preferences/com.ominidev.omini.plist",
-    "~/Library/Saved Application State/com.ominidev.omini.savedState",
+    "~/Library/Preferences/com.ominidev.app.plist",
+    "~/Library/Saved Application State/com.ominidev.app.savedState",
   ]
 end
